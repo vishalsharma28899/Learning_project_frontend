@@ -1,61 +1,107 @@
+/* 🌈 Global Styles */
 body {
-  background: #f9fafb;
+  background: linear-gradient(135deg, #f9fafb, #e0f2fe);
   font-family: "Poppins", sans-serif;
   margin: 0;
+  padding: 0;
+  color: #111827;
 }
 
+/* 🌟 Container */
 .container {
   display: flex;
-justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   max-width: 700px;
-  margin: 50px auto;
-  background: rgb(82, 47, 47);
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 4px 15px rgba(29, 167, 24, 0.1);
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
+.container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+/* 🧭 Heading */
 h1 {
   text-align: center;
-  color: #333;
+  color: #1e3a8a;
+  margin-bottom: 25px;
+  font-size: 28px;
+  letter-spacing: 1px;
 }
 
+/* 📄 Form Card */
 .form-card {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  margin-bottom: 30px;
+  gap: 18px;
+  width: 100%;
 }
 
 input,
 textarea {
-  padding: 10px;
+  padding: 12px 15px;
   font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+  background: #f9fafb;
+  resize: none;
 }
 
+input:focus,
+textarea:focus {
+  border-color: #2563eb;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+  outline: none;
+}
+
+/* 🚀 Button */
 button {
-  background: #2563eb;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
   color: white;
   border: none;
-  padding: 12px;
-  border-radius: 8px;
+  padding: 12px 16px;
+  border-radius: 10px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
 }
 
 button:hover {
-  background: #1e40af;
+  background: linear-gradient(135deg, #1e40af, #1d4ed8);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(30, 64, 175, 0.3);
 }
 
+/* 💬 Submissions Section */
 .submissions {
   display: grid;
-  gap: 10px;
+  gap: 15px;
+  width: 100%;
+  margin-top: 30px;
 }
 
+/* 🗂️ Submission Cards */
 .card {
-  background: #0c0d0f;
-  padding: 15px;
-  border-radius: 10px;
+  background: linear-gradient(135deg, #1e3a8a, #1e40af);
+  color: #f9fafb;
+  padding: 18px 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(30, 58, 138, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(30, 64, 175, 0.3);
 }
