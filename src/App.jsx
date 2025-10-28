@@ -11,13 +11,13 @@ function App() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:5000/api/form", formData);
+    await axios.post("https://learning-project-5jlc.onrender.com/api/form", formData);
     setFormData({ name: "", email: "", message: "" });
     fetchForms();
   };
 
   const fetchForms = async () => {
-    const res = await axios.get("http://localhost:5000/api/forms");
+    const res = await axios.get("https://learning-project-5jlc.onrender.com/api/forms");
     setSubmissions(res.data);
   };
 
