@@ -53,6 +53,7 @@ textarea {
   border-radius: 10px;
   transition: all 0.25s ease;
   background: #f9fafb;
+  color: #000;
   resize: none;
 }
 
@@ -86,7 +87,10 @@ button:hover {
 
 /* 💬 Submissions Section */
 .submissions {
-  display: grid;
+  display: flex;
+ 
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 15px;
   width: 100%;
   margin-top: 30px;
@@ -94,10 +98,14 @@ button:hover {
 
 /* 🗂️ Submission Cards */
 .card {
-  background: linear-gradient(135deg, #1e3a8a, #1e40af);
+  background: linear-gradient(135deg, #2d3e6c, #1e40af);
   color: #f9fafb;
   padding: 18px 20px;
   border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
   box-shadow: 0 4px 10px rgba(30, 58, 138, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -106,3 +114,4 @@ button:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 14px rgba(30, 64, 175, 0.3);
 }
+   
